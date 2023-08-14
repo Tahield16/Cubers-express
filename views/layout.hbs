@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <title>Presentación foro del cubero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato:wght@400;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark fixed-top"
+            data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/img/Rubik-izq.jpg" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Cubers foro
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="competividad.html" target="_blank">Competividad en la
+                                actualidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mejores">Los mejores</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="bienvenida container-fluid" style="background:url(images/img/Rubik-izq.jpg);">
+            <div class="animated-text">
+                <h1 class="titulo"><u>Bienvenido/a a Cubers</u></h1>
+                <h2 class="titulo">El foro del cubero</h2>
+
+                <p class="texto">¡Bienvenido a cubers!
+                    <br>
+                    Dentro de este foro podras encontrar toda la información actual
+                    acerca del cubo de Rubik, desde su creación, las competencias actuales y los actuales campeones del
+                    mundo.
+                    <br>
+                    ¡Esperamos que los disfrutes!.
+                </p>
+            </div>
+
+        </div>
+        <article id="articulos">
+                
+                <h1 class="titulo">NUESTROS ARTICULOS</h1>
+            <div class="noticias">
+                <a href="historia.html" class="card-link" id="historia-art">
+                    <div class="card articulo">
+                        <img src="images/img/ERNO.jpg" class="card-img-top" alt="Articulo d la historia del cubo">
+                        <div class="card-body">
+                            <h1 class="titulo">La historia detras del cubo de Rubik</h1>
+                            <p class="card-text">Descubre la increible historia detras del juegute mas vendido del
+                                mundo.
+
+                                La historia de su creador,<u>Erno Rubik</u>, que pretendia con el primer Cubo Rubik,
+                                como se volvio un jueguete y como comenzo a popularizarse.
+                                <br>
+                                ¡NO TE LO PODES PERDER!
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="competividad.html" class="card-link" id="WCA-art">
+                    <div class="card articulo">
+
+                        <img src="images/img/wca-logo.png" class="card-img-top" alt="Logo de la WCA ">
+                        <div class="card-body">
+                            <h1 class="titulo">Competividad en la actualidad</h1>
+                            <p class="card-text">Descubre que es y de que se encarga la asociación mundial del cubo
+                                Rubik(WCA, por sus siglas en ingles). <br>Desde su origen en los foros de internet,
+                                hasta
+                                regular y administrar las competiciones actuales. <br> <u><b> ¡ Y MUCHO MAS!</b></u>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </article>
+        <br><br><br>
+        <article class="container-fluid form-container">
+            <h1 class="titulo">CONTACTANOS</h1>
+            <form action="" method="POST" class="contact-form">
+                <div class="inputs-container">
+                    <label for="nombre" class="titulo form-nombre">Nombres y apellido/s: </label><input type="text"
+                        name="nombre" id="in-nombre" class="form-in form-nombre" required>
+                    <label for="gmail" class="titulo form-gmail">Correo Electronico : </label> <input type="email"
+                        name="gmail" required id="in-gmail" class="form-in form-gmail">
+                    <label for="mensaje" class="titulo form-mensaje">Escribi tu mensaje : </label> <textarea
+                        name="mensaje" id="area-mensaje" class="form-mensaje" cols="30" rows="10"></textarea>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </article>
+
+
+
+    </main>
+    <footer>
+        <p id="footer-text">Pagina creada por Tahiel Devoto</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    {{{body}}}
+</body>
+
+</html>
