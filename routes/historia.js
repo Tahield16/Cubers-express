@@ -1,7 +1,11 @@
-var express=require('express');
-var router=express.Router();
-router.get('/historia',function(req,res){
-    res.render('historia');
+var express = require('express');
+var router = express.Router();
 
-})
-module.exports=router;
+/* GET home page. */
+router.get('/historia', function(req, res, next) {
+  res.render('historia');
+}
+);
+
+
+module.exports = router;

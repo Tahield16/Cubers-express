@@ -1,3 +1,6 @@
+
+
+/* INICIO DEL ACTUAL CSS, BORRAR EN CASO DE ERROR */
 /*font-family: 'Alfa Slab One', cursive;
 font-family: 'Lato', sans-serif;*/
 html{
@@ -42,11 +45,14 @@ footer{
   font-size: 2rem;
 }
 /* INICIO HISTORIA */
+#historia{
+  padding-left: 5%;
+
+}
 #introdución-historia{
- background-image:url(public/img/ERNO.jpg);
  background-repeat: no-repeat;
  background-size:cover;
-  width:100%;
+  width:100vw;
  height:100vh;
  display:flex;
  justify-content: flex-start;
