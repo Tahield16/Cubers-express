@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var historiaRouter = require('./routes/historia');
 var actualidadRouter = require('./routes/actualidad');
 var contactoRouter=require("./routes/contacto");
+var loginRouter=require("./routes/admin/login");
 var app = express();
 require('dotenv').config();
 // view engine setup
@@ -26,6 +27,7 @@ app.use('/users', usersRouter);
 app.use('/historia', historiaRouter);
 app.use('/actualidad', actualidadRouter);
 app.use('/contacto', contactoRouter);
+app.use('/admin/login',loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

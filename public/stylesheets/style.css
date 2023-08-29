@@ -24,7 +24,8 @@ main>*{
 
 footer{
   background-color: rgb(152, 152, 188);
-
+  display:block;
+  
 }
 #footer-text{
   font-family: 'Lato', sans-serif;
@@ -391,3 +392,6 @@ padding: 5% 5%;
   color:white;
 }
 /* FIN LANDING PAGE */
+/* INICIO LOGIN PAGE */
+
+/* FIN LOGIN PAGE */
