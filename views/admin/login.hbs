@@ -1,20 +1,20 @@
 <main class="container-fluid form-container">
-            <h1 class="titulo">Inicie Sesión</h1>
-            <h2 class="titulo">estimado admin complete los siguientes datos:</h2>
-            <form action="/admin/login" method="POST" class="contact-form">
-                    <ul>
-                        <li><label for="nombre" class="titulo form-nombre">Usuario: </label><input
-                                type="text" name="usuario" id="in-nombre" class="form-in form-nombre" required></li>
-                        <li><label for="gmail" class="titulo form-gmail">Contraseña : </label> <input
-                                type="password" name="password" required id="in-gmail" class="form-in form-gmail"></li>
-                        
+        <h1 class="titulo">Inicie Sesión</h1>
+        <h2 class="titulo">estimado admin complete los siguientes datos:</h2>
+        <form action="/admin/login" method="POST" class="contact-form">
+                <ul>
+                        <li><label for="nombre" class="titulo form-nombre">Usuario: </label><input type="text"
+                                        name="usuario" id="in-nombre" class="form-in form-nombre" required></li>
+                        <li><label for="gmail" class="titulo form-gmail">Contraseña : </label> <input type="password"
+                                        name="password" required id="in-gmail" class="form-in form-gmail"></li>
 
 
-                    </ul>
-                    <button type="submit">Enviar</button>
-                    
-            </form>
-            {{#if error}}
-            <p class="text">Usuario o clave incorrecto</p>
-            {{/if}}
+
+                </ul>
+                <button type="submit">Enviar</button>
+                {{#if error}}
+                <p class="text">Usuario o clave incorrecto</p>
+                {{/if}}
+        </form>
+
 </main>

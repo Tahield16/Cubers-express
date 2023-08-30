@@ -8,10 +8,30 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var historiaRouter = require('./routes/historia');
 var actualidadRouter = require('./routes/actualidad');
-var contactoRouter=require("./routes/contacto");
-var loginRouter=require("./routes/admin/login");
+var contactoRouter = require("./routes/contacto");
+var loginRouter = require("./routes/admin/login");
 var app = express();
+
 require('dotenv').config();
+var session = require('express-session');
+app.use(session({
+  secret: 'NYw9AaeAlxrb7yzabeB47',
+
+  resave: false,
+  saveUninitialized: true
+}));
+secured = async (req, res, next) => {
+  try {
+    console.log();
+    if (req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('admin/login');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -27,7 +47,7 @@ app.use('/users', usersRouter);
 app.use('/historia', historiaRouter);
 app.use('/actualidad', actualidadRouter);
 app.use('/contacto', contactoRouter);
-app.use('/admin/login',loginRouter);
+app.use('/admin/login', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
