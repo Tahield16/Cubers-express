@@ -1,0 +1,36 @@
+using System.ComponentModel.Design.Serialization;
+using System.IO;
+
+internal class Program
+{
+    private static void Lectura()
+    {
+        Console.WriteLine("Ingrese un numero del 1 al 10 para ver su tabla de multiplicar");
+        int a = int.Parse(Console.ReadLine());
+        if (a <= 10 && a >= 1)
+        {
+            string nom_archivo = "tabla_" + a + ".txt";
+            StreamReader miArchivoL = new StreamReader(nom_archivo);
+            try
+            {
+                string linea = miArchivoL.ReadLine();
+                while (linea != null)
+                {
+                    Console.WriteLine(linea);
+                    linea = miArchivoL.ReadLine();
+
+
+                }
+            }
+            catch (FileNotFoundException ex)
+            {
+                //Capturar la excepcion mas especifica primero...
+                Console.WriteLine("[Error] La tabla que usted intenta visualizar no existe");
+            }
+        }
+    }
+    private static void Main(string[] args)
+    {
+        Lectura();
+    }
+}
